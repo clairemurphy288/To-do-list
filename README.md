@@ -4,4 +4,4 @@ HOW TO RUN:
 after you have this repository on your local computer you must use node/nodemon to run the server.
 - within the todolist-v1 repository: run these commands 
 - node app.js or nodemon app.js
--in your web browser type in: localhost:3000
+- in your web browser type in: localhost:3000
