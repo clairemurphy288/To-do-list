@@ -1,0 +1,22 @@
+<%- include("header") -%>
+    <div id ="heading" class="box">
+        <h1><%= listTitle %></h1>
+    </div>
+
+<div class="box">
+
+        <!-- //example of code with ejs scriplets -->
+        <% for (let i = 0; i < listItems.length; i++) { %>
+    <div class="item"> 
+        <!-- Dont wrap ejs in styling!!! It can mess up stuff -->
+            <input type="checkbox">
+            <p><%=listItems[i]%></p>
+    </div>
+        <% } %>
+    
+    <form class="item" action="/" method="post">
+        <input autocomplete="off" placeholder="new items" type="text" name="newItem">
+        <button name = "button" type="list" value=<%= listTitle %>>+</button>
+    </form>
+</div>
+<%- include("footer") -%>
